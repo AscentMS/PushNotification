@@ -105,7 +105,7 @@ static char launchNotificationKey;
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void(^)(UIBackgroundFetchResult result))completionHandler
 {
-    NSLog(@"didReceiveRemoteNotification with fetchCompletionHandler");  
+    NSLog(@"didReceiveRemoteNotification with fetchCompletionHandler");
 
     if (application.applicationState == UIApplicationStateActive) {
         PushPlugin *pushHandler = [self getCommandInstance:@"PushPlugin"];
